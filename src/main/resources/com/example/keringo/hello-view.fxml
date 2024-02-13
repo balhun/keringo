@@ -13,11 +13,11 @@
          </HBox.margin></Pane>
       <VBox alignment="TOP_CENTER" spacing="5.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Start" />
-            <Slider blockIncrement="2.0" majorTickUnit="5.0" max="11.0" min="1.0" minorTickCount="4" prefWidth="100.0" value="1.0" />
-            <Label text="Speed: 1" />
-            <Slider max="300.0" min="32.0" prefWidth="100.0" value="200.0" />
-            <Label text="Radius: 200" />
+            <Button mnemonicParsing="false" onAction="#onClickStart" prefWidth="100.0" text="Start" />
+            <Slider fx:id="slSpeed" blockIncrement="2.0" majorTickUnit="5.0" max="11.0" min="1.0" minorTickCount="4" prefWidth="100.0" value="1.0" />
+            <Label fx:id="lbSpeed" text="Speed: 1" />
+            <Slider fx:id="slRadius" max="300.0" min="32.0" prefWidth="100.0" value="200.0" />
+            <Label fx:id="lbRadius" text="Radius: 200" />
             <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@ball1.png" />
