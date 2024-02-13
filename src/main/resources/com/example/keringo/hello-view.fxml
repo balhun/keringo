@@ -7,23 +7,23 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.keringo.HelloController">
    <children>
-      <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: lightgrey;">
+      <Pane fx:id="pane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: lightgrey;">
          <HBox.margin>
             <Insets />
          </HBox.margin></Pane>
       <VBox alignment="TOP_CENTER" spacing="5.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#onClickStart" prefWidth="100.0" text="Start" />
+            <Button fx:id="gomb" mnemonicParsing="false" onAction="#onClickStart" prefWidth="100.0" text="Start" />
             <Slider fx:id="slSpeed" blockIncrement="2.0" majorTickUnit="5.0" max="11.0" min="1.0" minorTickCount="4" prefWidth="100.0" value="1.0" />
             <Label fx:id="lbSpeed" text="Speed: 1" />
             <Slider fx:id="slRadius" max="300.0" min="32.0" prefWidth="100.0" value="200.0" />
             <Label fx:id="lbRadius" text="Radius: 200" />
-            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="64.0" onMouseClicked="#onClickSzurke" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@ball1.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="64.0" onMouseClicked="#onClickMasik" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@ball2.png" />
                </image>
